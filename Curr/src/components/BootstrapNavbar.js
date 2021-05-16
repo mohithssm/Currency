@@ -1,0 +1,31 @@
+import React from "react";
+import { Navbar, Nav, NavDropdown } from "react-bootstrap";
+import { LinkContainer } from "react-router-bootstrap";
+
+class BootstrapNavbar extends React.Component {
+  render() {
+    return (
+      <Navbar collapseOnSelect expand="lg" navbar="dark" bg="info">
+        <Navbar.Brand href="/Home" style={{ paddingLeft: "10px" }}>
+          Indian Currency Recognition
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav" style={{ padding: "15px" }}>
+          <Nav className="mr-auto">
+            <LinkContainer to="/Home">
+              <Nav.Link>Home</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="/About">
+              <Nav.Link>About</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="/Contact">
+              <Nav.Link>Contact</Nav.Link>
+            </LinkContainer>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
+    );
+  }
+}
+
+export default BootstrapNavbar;
