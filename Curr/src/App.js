@@ -12,8 +12,10 @@ function App() {
     <Router>
       <BootstrapNavbar />
 
-      <Route path="/" />
-      <Route path="/Home" component={Home} />
+      <Route exact path="/">
+        <Home />
+      </Route>
+      {/* <Route path="/Home" component={Home} /> */}
       <Route path="/Contact" component={Contact} />
       <Route path="/About" component={About} />
       <Route path="/Predictor" component={Predictor} />

@@ -3,9 +3,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Carousel from "react-bootstrap/Carousel";
 import Card from "react-bootstrap/Card";
 import Container from "react-bootstrap/Container";
-import { Nav, Col, Row } from "react-bootstrap";
-
-import { Tab } from "react-bootstrap";
+import { Nav, Col, Row, Button } from "react-bootstrap";
+import Predictor from "./Predictor";
+import { Link } from 'react-router-dom';
 
 class BootstrapCarousel extends React.Component {
   render() {
@@ -106,7 +106,44 @@ class BootstrapCarousel extends React.Component {
           </Col>
           <Col md={3}></Col>
         </Row>
+        <Row style={{ padding: "20px" }}>
+        <Col sm={3} md={3} lg={3}></Col>
+        <Col sm={6} md={6} lg={6} style={{display:"flex", justifyContent:"center"}}>
+        <Card
+          border="light"
+          bg="transparent"
+          text="light"
+          className="text-center"
+          style={{
+            width: "auto",
+            borderRadius: "2%",
+            borderWidth: "3px",
+          }}
+        >
+          <Card.Header>
+            <h4>
+              <b>BODY</b>
+            </h4>
+          </Card.Header>
+          <Card.Body>
+            <Card.Title>Special title treatment</Card.Title>
+            <Card.Text>
+              With supporting text below as a natural lead-in to additional
+              content.
+            </Card.Text>
+            <Link to="/Predictor">
+            <Button>
+                Click to Start prediction!
+            </Button>
+        </Link>
+          </Card.Body>
+        </Card>
 
+
+        </Col>
+
+        <Col sm={3} md={3} lg={3}></Col>
+        </Row>
         
       </Container>
     );

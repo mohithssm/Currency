@@ -6,15 +6,13 @@ class BootstrapNavbar extends React.Component {
   render() {
     return (
       <Navbar collapseOnSelect sticky="top" expand="lg" navbar="dark" bg="primary" text="light">
-        <Navbar.Brand href="/Home" style={{ paddingLeft: "10px" }}>
+        <Navbar.Brand href="/" style={{ paddingLeft: "10px" }}>
           Indian Currency Recognition
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav" style={{ padding: "15px"}}>
           <Nav className="mr-auto">
-          <LinkContainer to="/Home">
-              <Nav.Link>Home</Nav.Link>
-            </LinkContainer>
+       
             <LinkContainer to="/Predictor">
               <Nav.Link>Predictor</Nav.Link>
             </LinkContainer>
