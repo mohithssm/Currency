@@ -10,8 +10,9 @@ const Chart = (props) => {
   console.log(label, confidence);
   return (
     <Card
-      border="light"
-      text="light"
+    bg="dark"
+    text="light"
+    border="warning"
       className="text-center"
       style={{
         minWidth: "200px",
