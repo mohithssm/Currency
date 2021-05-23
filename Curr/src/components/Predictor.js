@@ -20,7 +20,7 @@ class Predictor extends React.Component {
           
           <Col xs={10} md={10} sm={10} lg={10}>
             <Card
-              bg="dark"
+              bg="transparent"
               text="light"
               border="primary"
               className="text-center"

@@ -14,7 +14,7 @@ class About extends React.Component {
         }}
       >
         <Card
-          bg="dark"
+          bg="transparent"
           text="light"
           border="light"
           className="text-center"

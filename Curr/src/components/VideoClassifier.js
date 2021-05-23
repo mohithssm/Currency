@@ -75,7 +75,7 @@ function VideoClassifier() {
       <Row >
         <Col xs={12}  sm={12} md={12} lg={6} >
           <Card
-            bg="dark"
+            bg="transparent"
             text="light"
             border="warning"
             className="text-center"
@@ -120,7 +120,7 @@ function VideoClassifier() {
         <Col  xs={12}  sm={12} md={12} lg={6} >
 
         <Card
-          bg="dark"
+          bg="transparent"
           text="light"
           border="warning"
           className="text-center"

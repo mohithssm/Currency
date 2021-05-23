@@ -15,7 +15,7 @@ class Contact extends React.Component {
       >
         <Card
           border="light"
-          bg="dark"
+          bg="transparent"
           text="light"
           className="text-center"
           style={{
