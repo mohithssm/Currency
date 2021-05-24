@@ -30,10 +30,13 @@ class Contact extends React.Component {
             </h4>
           </Card.Header>
           <Card.Body>
-            <Card.Title>Special title treatment</Card.Title>
+          <Card.Title>mohith</Card.Title>
             <Card.Text>
-              With supporting text below as a natural lead-in to additional
-              content.
+              mohithsekharamantri@msitprogram.net
+            </Card.Text>
+            <Card.Title>vamsi krishna</Card.Title>
+            <Card.Text>
+              nunnavamsikrishna1998@gmail.com
             </Card.Text>
           </Card.Body>
         </Card>

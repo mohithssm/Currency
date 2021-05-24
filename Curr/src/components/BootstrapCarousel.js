@@ -121,15 +121,23 @@ class BootstrapCarousel extends React.Component {
           }}
         >
           <Card.Header>
-            <h4>
+            {/* <h4>
               <b>BODY</b>
-            </h4>
+            </h4> */}
+            CURRENCIES
           </Card.Header>
           <Card.Body>
-            <Card.Title>Special title treatment</Card.Title>
+            {/* <Card.Title></Card.Title> */}
             <Card.Text>
-              With supporting text below as a natural lead-in to additional
-              content.
+            <ol style={{listStyleType:"none",alignItems:"center"}}>
+                <li class="list-group-item list-group-item-action">10</li>
+                <li class="list-group-item list-group-item-action">20</li>
+                <li class="list-group-item list-group-item-action">50</li>
+                <li class="list-group-item list-group-item-action">100</li>
+                <li class="list-group-item list-group-item-action">200</li>
+                <li class="list-group-item list-group-item-action">500</li>
+                <li class="list-group-item list-group-item-action">2000</li>
+              </ol>
             </Card.Text>
             <Link to="/Predictor">
             <Button>
