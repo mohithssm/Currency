@@ -16,15 +16,15 @@ class Predictor extends React.Component {
 
         <Row style={{ padding: "20px", height:"auto"}}>
 
-        <Col xs={1} sm={1} md={1} lg={1}></Col>  
+        <Col  sm={1} md={1} lg={1}></Col>  
           
-          <Col xs={10} md={10} sm={10} lg={10}>
+          <Col xs={12} md={10} sm={10} lg={10}>
             <Card
               bg="transparent"
               text="light"
               border="primary"
               className="text-center"
-              style={{ width: "auto", borderWidth: "3px"}}
+              style={{ width: "auto", borderWidth: "3px", minHeight:'80vh'}}
             >
               <Card.Header>
                 <h4>
@@ -67,7 +67,7 @@ class Predictor extends React.Component {
               </Card.Body>
             </Card>
           </Col>
-          <Col xs={1} sm={1} md={1} lg={1}></Col>  
+          <Col  sm={1} md={1} lg={1}></Col>  
 
 
         </Row>

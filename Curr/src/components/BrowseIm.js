@@ -90,6 +90,7 @@ function FileUpload() {
             
             borderRadius: "2%",
             borderWidth: "3px",
+            minHeight: "50vh"
           }}
         >
           <Card.Header>Browse Image</Card.Header>
@@ -125,6 +126,8 @@ function FileUpload() {
                 
                 borderRadius: "2%",
                 borderWidth: "3px",
+            minHeight: "50vh"
+
             }}
             >
                 <Card.Header>Predicted Output</Card.Header>

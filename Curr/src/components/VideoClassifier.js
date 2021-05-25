@@ -83,6 +83,8 @@ function VideoClassifier() {
               
               borderRadius: "2%",
               borderWidth: "3px",
+            minHeight: "50vh"
+
             }}
           >
             <Card.Header>Web Cam</Card.Header>
@@ -128,6 +130,8 @@ function VideoClassifier() {
             
             borderRadius: "2%",
             borderWidth: "3px",
+            minHeight: "50vh"
+
             
           }}
         >

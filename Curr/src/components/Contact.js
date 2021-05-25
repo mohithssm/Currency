@@ -32,11 +32,11 @@ class Contact extends React.Component {
           <Card.Body>
           <Card.Title>mohith</Card.Title>
             <Card.Text>
-              mohithsekharamantri@msitprogram.net
+              <a href="#">mohithsekharamantri@gmail.com</a>
             </Card.Text>
             <Card.Title>vamsi krishna</Card.Title>
             <Card.Text>
-              nunnavamsikrishna1998@gmail.com
+            <a href="#">nunnavamsikrishna1998@gmail.com</a>
             </Card.Text>
           </Card.Body>
         </Card>

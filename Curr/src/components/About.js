@@ -18,7 +18,7 @@ class About extends React.Component {
           text="light"
           border="light"
           className="text-center"
-          style={{ width: "auto", borderRadius: "2%", borderWidth: "3px" }}
+          style={{ width: "auto", borderRadius: "2%", borderWidth: "3px", maxWidth:"75vh" }}
         >
           <Card.Header>
             <h4>
@@ -26,25 +26,45 @@ class About extends React.Component {
             </h4>
           </Card.Header>
           <Card.Body>
-            <Card.Title class="text-info">Indian Currency Recognisation</Card.Title>
+            <Card.Title class="text-info"><h4>Indian Currency Recognisation</h4></Card.Title>
             <Card.Text >
-            <blockquote class="blockquote">
-            <p class="text-warning" style={{textAlign:"center"}}>
-              This application is made to recognise the denomination of currency and predict it.
-               It recognises the currency through web cam or by browsing image. This application
-                can predict the following images
+              <blockquote class="blockquote">
+                <p class="text-warning" style={{textAlign:"justify"}}>
+                  This application is made to recognise the denomination of currency and predict it.
+                  It recognises the currency through web cam or by browsing image. This application
+                  can predict the following images
                 </p>
-            </blockquote>
-                <ul style={{listStyleType:"none",alignItems:"center"}}>
-                <li class="list-group-item list-group-item-action">10</li>
-                <li class="list-group-item list-group-item-action">20</li>
-                <li class="list-group-item list-group-item-action">50</li>
-                <li class="list-group-item list-group-item-action">100</li>
-                <li class="list-group-item list-group-item-action">200</li>
-                <li class="list-group-item list-group-item-action">500</li>
-                <li class="list-group-item list-group-item-action">2000</li>
-              </ul>
-              
+              </blockquote>
+              <table class="table table-striped table-hover">
+                <thead>
+                  <tr class="table-primary">
+                    <th scope="col">Currency</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="table-primary">
+                    <td scope="col">10</td>
+                  </tr>
+                  <tr class="table-primary">
+                    <td scope="col">20</td>
+                  </tr>
+                  <tr class="table-primary">
+                    <td scope="col">50</td>
+                  </tr>
+                  <tr class="table-primary">
+                    <td scope="col">100</td>
+                  </tr>
+                  <tr class="table-primary">
+                    <td scope="col">200</td>
+                  </tr>
+                  <tr class="table-primary">
+                    <td scope="col">500</td>
+                  </tr>
+                  <tr class="table-primary">
+                    <td scope="col">2000</td>
+                  </tr>
+                  </tbody>
+              </table>
             </Card.Text>
           </Card.Body>
         </Card>

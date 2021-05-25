@@ -118,6 +118,7 @@ class BootstrapCarousel extends React.Component {
             width: "auto",
             borderRadius: "2%",
             borderWidth: "3px",
+            minWidth:"40vh"
           }}
         >
           <Card.Header>
@@ -129,15 +130,32 @@ class BootstrapCarousel extends React.Component {
           <Card.Body>
             {/* <Card.Title></Card.Title> */}
             <Card.Text>
-            <ol style={{listStyleType:"none",alignItems:"center"}}>
-                <li class="list-group-item list-group-item-action">10</li>
-                <li class="list-group-item list-group-item-action">20</li>
-                <li class="list-group-item list-group-item-action">50</li>
-                <li class="list-group-item list-group-item-action">100</li>
-                <li class="list-group-item list-group-item-action">200</li>
-                <li class="list-group-item list-group-item-action">500</li>
-                <li class="list-group-item list-group-item-action">2000</li>
-              </ol>
+            <table class="table table-striped table-hover">
+             
+                <tbody>
+                  <tr class="table-primary">
+                    <td scope="col">10</td>
+                  </tr>
+                  <tr class="table-primary">
+                    <td scope="col">20</td>
+                  </tr>
+                  <tr class="table-primary">
+                    <td scope="col">50</td>
+                  </tr>
+                  <tr class="table-primary">
+                    <td scope="col">100</td>
+                  </tr>
+                  <tr class="table-primary">
+                    <td scope="col">200</td>
+                  </tr>
+                  <tr class="table-primary">
+                    <td scope="col">500</td>
+                  </tr>
+                  <tr class="table-primary">
+                    <td scope="col">2000</td>
+                  </tr>
+                  </tbody>
+              </table>
             </Card.Text>
             <Link to="/Predictor">
             <Button>
