@@ -30,13 +30,13 @@ class Contact extends React.Component {
             </h4>
           </Card.Header>
           <Card.Body>
-          <Card.Title>mohith</Card.Title>
+            <Card.Title>mohith</Card.Title>
             <Card.Text>
               <a href="#">mohithsekharamantri@gmail.com</a>
             </Card.Text>
             <Card.Title>vamsi krishna</Card.Title>
             <Card.Text>
-            <a href="#">nunnavamsikrishna1998@gmail.com</a>
+              <a href="#">nunnavamsikrishna1998@gmail.com</a>
             </Card.Text>
           </Card.Body>
         </Card>
