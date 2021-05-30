@@ -5,6 +5,8 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Container from "react-bootstrap/Container";
 import GaugeChart from "react-gauge-chart";
+import Loader from "react-loader-spinner";
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 
 
 
@@ -35,6 +37,7 @@ const Chart = (props) => {
 function FileUpload() {
   const [file, setFile] = React.useState("");
   const [result, setResult] = useState([]);
+  const [loaded, setLoaded] = useState(false);
 
 
 
@@ -65,11 +68,11 @@ function FileUpload() {
     const toggle = () => {
         classifyImg();
         setResult([]);
-
+        
       };
 
   const ImageThumb = ({ image }) => {
-    return <img src={URL.createObjectURL(image)} id="image" width="150px" alt={image.name} />;
+    return <img src={URL.createObjectURL(image)} id="image" width="200px" alt={image.name} />;
   };
 
 
@@ -94,16 +97,17 @@ function FileUpload() {
           }}
         >
           <Card.Header>Browse Image</Card.Header>
-          <Card.Body style={{display:"flex", flexDirection:"column", alignItems:"center"}}>
+          <Card.Body style={{display:"flex", flexDirection:"column", justifyContent:"center"}} >
        
           
-          
+          <div>
           <input class="form-control" input="image" type="file" onChange={handleUpload} />
           <br/>
-
+          </div>
           <div>
           {file && <ImageThumb image={file} />}
           </div>
+           
            <div>
            <br/>
 
@@ -132,6 +136,14 @@ function FileUpload() {
             >
                 <Card.Header>Predicted Output</Card.Header>
                 <Card.Body>
+                <Loader
+                type="Watch"
+                color="#00BFFF"
+                height={100}
+                width={100}
+                visible={loaded}
+                style={{ display: "flex", justifyContent: "center", marginTop: "30px" }}
+              />
                     {result.length > 0 && (
                         <div>
 

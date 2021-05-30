@@ -26,6 +26,7 @@ const Chart = (props) => {
             nrOfLevels={20}
             arcWidth={0.3}
             percent={confidence}
+            style={{width:"100%"}}
           />
           </div>
 
@@ -83,12 +84,13 @@ function VideoClassifier() {
               
               borderRadius: "2%",
               borderWidth: "3px",
-            minHeight: "50vh"
-
+              minHeight: "50vh",
+              
             }}
           >
             <Card.Header>Web Cam</Card.Header>
-            <Card.Body>
+            <Card.Body style={{display:"flex", justifyContent:"center"}} >
+              
               <Loader
                 type="Watch"
                 color="#00BFFF"
