@@ -5,7 +5,7 @@ import Card from "react-bootstrap/Card";
 import Container from "react-bootstrap/Container";
 import { Nav, Col, Row, Button } from "react-bootstrap";
 import Predictor from "./Predictor";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 class BootstrapCarousel extends React.Component {
   render() {
@@ -107,70 +107,63 @@ class BootstrapCarousel extends React.Component {
           <Col md={3}></Col>
         </Row>
         <Row style={{ padding: "20px" }}>
-        <Col sm={3} md={3} lg={3}></Col>
-        <Col sm={6} md={6} lg={6} style={{display:"flex", justifyContent:"center"}}>
-        <Card
-          border="light"
-          bg="transparent"
-          text="light"
-          className="text-center"
-          style={{
-            width: "auto",
-            borderRadius: "2%",
-            borderWidth: "3px",
-            minWidth:"40vh"
-          }}
-        >
-          <Card.Header>
-            {/* <h4>
-              <b>BODY</b>
-            </h4> */}
-            CURRENCIES
-          </Card.Header>
-          <Card.Body>
-            {/* <Card.Title></Card.Title> */}
-            <Card.Text>
-            <table class="table table-striped table-hover">
-             
-                <tbody>
-                  <tr class="table-primary">
-                    <td scope="col">10</td>
-                  </tr>
-                  <tr class="table-primary">
-                    <td scope="col">20</td>
-                  </tr>
-                  <tr class="table-primary">
-                    <td scope="col">50</td>
-                  </tr>
-                  <tr class="table-primary">
-                    <td scope="col">100</td>
-                  </tr>
-                  <tr class="table-primary">
-                    <td scope="col">200</td>
-                  </tr>
-                  <tr class="table-primary">
-                    <td scope="col">500</td>
-                  </tr>
-                  <tr class="table-primary">
-                    <td scope="col">2000</td>
-                  </tr>
-                  </tbody>
-              </table>
-            </Card.Text>
-            <Link to="/Predictor">
-            <Button>
-                Click to Start prediction!
-            </Button>
-        </Link>
-          </Card.Body>
-        </Card>
+          <Col sm={3} md={3} lg={3}></Col>
+          <Col
+            sm={6}
+            md={6}
+            lg={6}
+            style={{ display: "flex", justifyContent: "center" }}
+          >
+            <Card
+              border="light"
+              bg="transparent"
+              text="light"
+              className="text-center"
+              style={{
+                width: "auto",
+                borderRadius: "2%",
+                borderWidth: "3px",
+                minWidth: "40vh",
+              }}
+            >
+              <Card.Header>CURRENCIES</Card.Header>
+              <Card.Body>
+                <Card.Text>
+                  <table class="table table-striped table-hover">
+                    <tbody>
+                      <tr class="table-primary">
+                        <td scope="col">10</td>
+                      </tr>
+                      <tr class="table-primary">
+                        <td scope="col">20</td>
+                      </tr>
+                      <tr class="table-primary">
+                        <td scope="col">50</td>
+                      </tr>
+                      <tr class="table-primary">
+                        <td scope="col">100</td>
+                      </tr>
+                      <tr class="table-primary">
+                        <td scope="col">200</td>
+                      </tr>
+                      <tr class="table-primary">
+                        <td scope="col">500</td>
+                      </tr>
+                      <tr class="table-primary">
+                        <td scope="col">2000</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </Card.Text>
+                <Link to="/Predictor">
+                  <Button>Click to Start prediction!</Button>
+                </Link>
+              </Card.Body>
+            </Card>
+          </Col>
 
-
-        </Col>
-
-        <Col sm={3} md={3} lg={3}></Col>
+          <Col sm={3} md={3} lg={3}></Col>
         </Row>
-        
       </Container>
     );
   }

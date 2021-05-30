@@ -16,9 +16,9 @@ class Predictor extends React.Component {
 
         <Row style={{ padding: "20px", height:"auto"}}>
 
-        <Col   md={1} lg={1}></Col>  
+        <Col  sm={1} md={1} lg={1}></Col>  
           
-          <Col xs={12} md={10} sm={12} lg={10}>
+          <Col xs={12} md={10} sm={10} lg={10}>
             <Card
               bg="transparent"
               text="light"
@@ -67,7 +67,7 @@ class Predictor extends React.Component {
               </Card.Body>
             </Card>
           </Col>
-          <Col  md={1} lg={1}></Col>  
+          <Col  sm={1} md={1} lg={1}></Col>  
 
 
         </Row>
