@@ -3,8 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Carousel from "react-bootstrap/Carousel";
 import Card from "react-bootstrap/Card";
 import Container from "react-bootstrap/Container";
-import { Nav, Col, Row, Button } from "react-bootstrap";
-import Predictor from "./Predictor";
+import { Col, Row, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 class BootstrapCarousel extends React.Component {
@@ -129,28 +128,28 @@ class BootstrapCarousel extends React.Component {
               <Card.Header>CURRENCIES</Card.Header>
               <Card.Body>
                 <Card.Text>
-                  <table class="table table-striped table-hover">
+                  <table className="table table-striped table-hover">
                     <tbody>
-                      <tr class="table-primary">
-                        <td scope="col">10</td>
+                      <tr className="table-primary">
+                        <td>10</td>
                       </tr>
-                      <tr class="table-primary">
-                        <td scope="col">20</td>
+                      <tr className="table-primary">
+                        <td>20</td>
                       </tr>
-                      <tr class="table-primary">
-                        <td scope="col">50</td>
+                      <tr className="table-primary">
+                        <td>50</td>
                       </tr>
-                      <tr class="table-primary">
-                        <td scope="col">100</td>
+                      <tr className="table-primary">
+                        <td>100</td>
                       </tr>
-                      <tr class="table-primary">
-                        <td scope="col">200</td>
+                      <tr className="table-primary">
+                        <td>200</td>
                       </tr>
-                      <tr class="table-primary">
-                        <td scope="col">500</td>
+                      <tr className="table-primary">
+                        <td>500</td>
                       </tr>
-                      <tr class="table-primary">
-                        <td scope="col">2000</td>
+                      <tr className="table-primary">
+                        <td>2000</td>
                       </tr>
                     </tbody>
                   </table>

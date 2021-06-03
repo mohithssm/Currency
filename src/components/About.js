@@ -31,45 +31,45 @@ class About extends React.Component {
             </h4>
           </Card.Header>
           <Card.Body>
-            <Card.Title class="text-info">
+            <Card.Title className="text-info">
               <h4>Indian Currency Recognisation</h4>
             </Card.Title>
             <Card.Text>
-              <blockquote class="blockquote">
-                <p class="text-warning" style={{ textAlign: "justify" }}>
+              <blockquote className="blockquote">
+                <p className="text-warning" style={{ textAlign: "justify" }}>
                   This application is made to recognise the denomination of
                   currency and predict it. It recognises the currency through
                   web cam or by browsing image. This application can predict the
                   following images
                 </p>
               </blockquote>
-              <table class="table table-striped table-hover">
+              <table className="table table-striped table-hover">
                 <thead>
-                  <tr class="table-primary">
+                  <tr className="table-primary">
                     <th scope="col">Currency</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr class="table-primary">
-                    <td scope="col">10</td>
+                  <tr className="table-primary">
+                    <td>10</td>
                   </tr>
-                  <tr class="table-primary">
-                    <td scope="col">20</td>
+                  <tr className="table-primary">
+                    <td>20</td>
                   </tr>
-                  <tr class="table-primary">
-                    <td scope="col">50</td>
+                  <tr className="table-primary">
+                    <td>50</td>
                   </tr>
-                  <tr class="table-primary">
-                    <td scope="col">100</td>
+                  <tr className="table-primary">
+                    <td>100</td>
                   </tr>
-                  <tr class="table-primary">
-                    <td scope="col">200</td>
+                  <tr className="table-primary">
+                    <td>200</td>
                   </tr>
-                  <tr class="table-primary">
-                    <td scope="col">500</td>
+                  <tr className="table-primary">
+                    <td>500</td>
                   </tr>
-                  <tr class="table-primary">
-                    <td scope="col">2000</td>
+                  <tr className="table-primary">
+                    <td>2000</td>
                   </tr>
                 </tbody>
               </table>

@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react";
+import React, { useState } from "react";
 import * as ml5 from "ml5";
 import { Row, Col } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
@@ -93,7 +93,7 @@ function FileUpload() {
               }}
             >
               <input
-                class="form-control"
+                className="form-control"
                 input="image"
                 type="file"
                 onChange={handleUpload}
