@@ -18,7 +18,7 @@ class BootstrapCarousel extends React.Component {
                 <img
                   className="d-block w-100"
                   src={"assets/img/10Front.png"}
-                  alt="First slide"
+                  alt="10 new front"
                 />
               </Carousel.Item>
 
@@ -26,7 +26,7 @@ class BootstrapCarousel extends React.Component {
                 <img
                   className="d-block w-100"
                   src={"assets/img/10OldFront.png"}
-                  alt="Second slide"
+                  alt="10 old note"
                 />
               </Carousel.Item>
 
@@ -34,7 +34,7 @@ class BootstrapCarousel extends React.Component {
                 <img
                   className="d-block w-100"
                   src={"assets/img/20Front.png"}
-                  alt="Second slide"
+                  alt="20 new front"
                 />
               </Carousel.Item>
 
@@ -42,7 +42,7 @@ class BootstrapCarousel extends React.Component {
                 <img
                   className="d-block w-100"
                   src={"assets/img/20OldFront.png"}
-                  alt="Second slide"
+                  alt="20 old front"
                 />
               </Carousel.Item>
 
@@ -50,7 +50,7 @@ class BootstrapCarousel extends React.Component {
                 <img
                   className="d-block w-100"
                   src={"assets/img/50Front.png"}
-                  alt="Second slide"
+                  alt="50 new front"
                 />
               </Carousel.Item>
 
@@ -58,7 +58,7 @@ class BootstrapCarousel extends React.Component {
                 <img
                   className="d-block w-100"
                   src={"assets/img/50OldFront.png"}
-                  alt="Second slide"
+                  alt="50 old front"
                 />
               </Carousel.Item>
 
@@ -66,7 +66,7 @@ class BootstrapCarousel extends React.Component {
                 <img
                   className="d-block w-100"
                   src={"assets/img/100Front.png"}
-                  alt="Second slide"
+                  alt="100 new front"
                 />
               </Carousel.Item>
 
@@ -74,7 +74,7 @@ class BootstrapCarousel extends React.Component {
                 <img
                   className="d-block w-100"
                   src={"assets/img/100OldFront.png"}
-                  alt="Second slide"
+                  alt="100 old front"
                 />
               </Carousel.Item>
 
@@ -82,7 +82,7 @@ class BootstrapCarousel extends React.Component {
                 <img
                   className="d-block w-100"
                   src={"assets/img/200Front.png"}
-                  alt="Second slide"
+                  alt="200 front"
                 />
               </Carousel.Item>
 
@@ -90,7 +90,7 @@ class BootstrapCarousel extends React.Component {
                 <img
                   className="d-block w-100"
                   src={"assets/img/500Front.png"}
-                  alt="Second slide"
+                  alt="500 front"
                 />
               </Carousel.Item>
 
@@ -98,7 +98,7 @@ class BootstrapCarousel extends React.Component {
                 <img
                   className="d-block w-100"
                   src={"assets/img/2000Front.png"}
-                  alt="Second slide"
+                  alt="2000 front"
                 />
               </Carousel.Item>
             </Carousel>
