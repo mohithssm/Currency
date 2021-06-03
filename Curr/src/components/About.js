@@ -18,7 +18,12 @@ class About extends React.Component {
           text="light"
           border="light"
           className="text-center"
-          style={{ width: "auto", borderRadius: "2%", borderWidth: "3px", maxWidth:"75vh" }}
+          style={{
+            width: "auto",
+            borderRadius: "2%",
+            borderWidth: "3px",
+            maxWidth: "75vh",
+          }}
         >
           <Card.Header>
             <h4>
@@ -26,13 +31,16 @@ class About extends React.Component {
             </h4>
           </Card.Header>
           <Card.Body>
-            <Card.Title class="text-info"><h4>Indian Currency Recognisation</h4></Card.Title>
-            <Card.Text >
+            <Card.Title class="text-info">
+              <h4>Indian Currency Recognisation</h4>
+            </Card.Title>
+            <Card.Text>
               <blockquote class="blockquote">
-                <p class="text-warning" style={{textAlign:"justify"}}>
-                  This application is made to recognise the denomination of currency and predict it.
-                  It recognises the currency through web cam or by browsing image. This application
-                  can predict the following images
+                <p class="text-warning" style={{ textAlign: "justify" }}>
+                  This application is made to recognise the denomination of
+                  currency and predict it. It recognises the currency through
+                  web cam or by browsing image. This application can predict the
+                  following images
                 </p>
               </blockquote>
               <table class="table table-striped table-hover">
@@ -63,7 +71,7 @@ class About extends React.Component {
                   <tr class="table-primary">
                     <td scope="col">2000</td>
                   </tr>
-                  </tbody>
+                </tbody>
               </table>
             </Card.Text>
           </Card.Body>
