@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Carousel from "react-bootstrap/Carousel";
 import Card from "react-bootstrap/Card";
 import Container from "react-bootstrap/Container";
-import { Col, Row, Button } from "react-bootstrap";
+import { Col, Row, Button, Table } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 class BootstrapCarousel extends React.Component {
@@ -13,7 +13,7 @@ class BootstrapCarousel extends React.Component {
         <Row style={{ padding: "20px" }}>
           <Col md={3}></Col>
           <Col md={6}>
-            <Carousel fade>
+            <Carousel keyboard="true">
               <Carousel.Item>
                 <img
                   className="d-block w-100"
@@ -128,7 +128,7 @@ class BootstrapCarousel extends React.Component {
               <Card.Header>CURRENCIES</Card.Header>
               <Card.Body>
                 <Card.Text>
-                  <table className="table table-striped table-hover">
+                  <Table className="table table-striped table-hover">
                     <tbody>
                       <tr className="table-primary">
                         <td>10</td>
@@ -152,7 +152,7 @@ class BootstrapCarousel extends React.Component {
                         <td>2000</td>
                       </tr>
                     </tbody>
-                  </table>
+                  </Table>
                 </Card.Text>
                 <Link to="/Predictor">
                   <Button>Click to Start prediction!</Button>

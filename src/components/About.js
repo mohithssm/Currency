@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "react-bootstrap/Card";
+import { Card, Table } from "react-bootstrap";
 import Container from "react-bootstrap/Container";
 
 class About extends React.Component {
@@ -16,7 +16,7 @@ class About extends React.Component {
         <Card
           bg="transparent"
           text="light"
-          border="light"
+          border="primary"
           className="text-center"
           style={{
             width: "auto",
@@ -31,19 +31,21 @@ class About extends React.Component {
             </h4>
           </Card.Header>
           <Card.Body>
-            <Card.Title className="text-info">
-              <h4>Indian Currency Recognisation</h4>
+            <Card.Title className="text-muted">
+              <h4>
+                <b>Indian Currency Recognisation</b>
+              </h4>
             </Card.Title>
             <Card.Text>
               <blockquote className="blockquote">
-                <p className="text-warning" style={{ textAlign: "justify" }}>
+                <p className="text-info" style={{ textAlign: "justify" }}>
                   This application is made to recognise the denomination of
                   currency and predict it. It recognises the currency through
                   web cam or by browsing image. This application can predict the
                   following images
                 </p>
               </blockquote>
-              <table className="table table-striped table-hover">
+              <Table className="table table-striped table-hover">
                 <thead>
                   <tr className="table-primary">
                     <th scope="col">Currency</th>
@@ -72,7 +74,7 @@ class About extends React.Component {
                     <td>2000</td>
                   </tr>
                 </tbody>
-              </table>
+              </Table>
             </Card.Text>
           </Card.Body>
         </Card>

@@ -43,6 +43,7 @@ function VideoClassifier() {
         .getUserMedia({ video: true, audio: false })
         .then((stream) => {
           videoRef.current.srcObject = stream;
+          videoRef.current.facingMode = "environment";
           videoRef.current.play();
           setLoaded(true);
         });
@@ -66,6 +67,10 @@ function VideoClassifier() {
     setResult([]);
   };
 
+  // const rotateWebCam = () => {
+  //   videoRef.current.facingMode = "environment";
+  // };
+
   return (
     <Container>
       <Row>
@@ -73,7 +78,7 @@ function VideoClassifier() {
           <Card
             bg="transparent"
             text="light"
-            border="warning"
+            border="primary"
             className="text-center"
             style={{
               borderRadius: "2%",
@@ -121,7 +126,7 @@ function VideoClassifier() {
           <Card
             bg="transparent"
             text="light"
-            border="warning"
+            border="primary"
             className="text-center"
             style={{
               borderRadius: "2%",

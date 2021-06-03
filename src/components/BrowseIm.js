@@ -76,7 +76,7 @@ function FileUpload() {
           <Card
             bg="transparent"
             text="light"
-            border="warning"
+            border="primary"
             className="text-center"
             style={{
               borderRadius: "2%",
@@ -115,7 +115,7 @@ function FileUpload() {
           <Card
             bg="transparent"
             text="light"
-            border="warning"
+            border="primary"
             className="text-center"
             style={{
               borderRadius: "2%",

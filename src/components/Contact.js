@@ -14,7 +14,7 @@ class Contact extends React.Component {
         }}
       >
         <Card
-          border="light"
+          border="primary"
           bg="transparent"
           text="light"
           className="text-center"
@@ -32,11 +32,15 @@ class Contact extends React.Component {
           <Card.Body>
             <Card.Title>mohith</Card.Title>
             <Card.Text>
-              <a href="#">mohithsekharamantri@gmail.com</a>
+              <a href="https://www.google.com/intl/en-GB/gmail/about/#">
+                mohithsekharamantri@gmail.com
+              </a>
             </Card.Text>
             <Card.Title>vamsi krishna</Card.Title>
             <Card.Text>
-              <a href="#">nunnavamsikrishna1998@gmail.com</a>
+              <a href="https://www.google.com/intl/en-GB/gmail/about/#">
+                nunnavamsikrishna1998@gmail.com
+              </a>
             </Card.Text>
           </Card.Body>
         </Card>
