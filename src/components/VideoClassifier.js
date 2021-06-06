@@ -49,13 +49,10 @@ function VideoClassifier() {
   useEffect(() => {
     classifier = ml5.imageClassifier("../../model/model.json", () => {
       navigator.mediaDevices
-        .getUserMedia({
-          video: { facingMode: { exact: "user" } },
-          audio: false,
-        })
+        .getUserMedia({ video: true, audio: false })
         .then((stream) => {
           videoRef.current.srcObject = stream;
-          // videoRef.current.facingMode = "environment";
+          videoRef.current.facingMode = "user";
           videoRef.current.play();
           setLoaded(true);
         });
@@ -91,8 +88,8 @@ function VideoClassifier() {
             style={{
               borderRadius: "2%",
               borderWidth: "3px",
-              minHeight: "50vh",
-              maxHeight: "50vh",
+              minHeight: "5vh",
+              maxHeight: "5vh",
             }}
           >
             <Card.Header>Web Cam</Card.Header>
@@ -147,8 +144,8 @@ function VideoClassifier() {
             style={{
               borderRadius: "2%",
               borderWidth: "3px",
-              minHeight: "50vh",
-              maxHeight: "50vh",
+              minHeight: "5vh",
+              maxHeight: "5vh",
             }}
           >
             <Card.Header>Predicted Output</Card.Header>
