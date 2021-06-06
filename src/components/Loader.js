@@ -1,5 +1,5 @@
 import React from "react";
-import { BallClipRotateMultiple } from "react-pure-loaders";
+import { BallBeat } from "react-pure-loaders";
 
 class AwesomeComponent extends React.Component {
   constructor(props) {
@@ -11,10 +11,7 @@ class AwesomeComponent extends React.Component {
   render() {
     return (
       <div>
-        <BallClipRotateMultiple
-          color={"#123abc"}
-          loading={this.state.loading}
-        />
+        <BallBeat color={"#123abc"} loading={this.state.loading} />
       </div>
     );
   }

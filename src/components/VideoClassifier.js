@@ -4,7 +4,6 @@ import Loader from "react-loader-spinner";
 import useInterval from "@use-it/interval";
 import Container from "react-bootstrap/Container";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
-// import "./VideoClassifier.css";
 import { Col, Row, Card } from "react-bootstrap";
 import GaugeChart from "react-gauge-chart";
 
@@ -52,7 +51,6 @@ function VideoClassifier() {
         .getUserMedia({ video: true, audio: false })
         .then((stream) => {
           videoRef.current.srcObject = stream;
-          videoRef.current.facingMode = "user";
           videoRef.current.play();
           setLoaded(true);
         });
@@ -88,8 +86,8 @@ function VideoClassifier() {
             style={{
               borderRadius: "2%",
               borderWidth: "3px",
-              minHeight: "5vh",
-              maxHeight: "5vh",
+              minHeight: "52vh",
+              maxHeight: "52vh",
             }}
           >
             <Card.Header>Web Cam</Card.Header>
@@ -144,8 +142,8 @@ function VideoClassifier() {
             style={{
               borderRadius: "2%",
               borderWidth: "3px",
-              minHeight: "5vh",
-              maxHeight: "5vh",
+              minHeight: "52vh",
+              maxHeight: "52vh",
             }}
           >
             <Card.Header>Predicted Output</Card.Header>
@@ -154,12 +152,15 @@ function VideoClassifier() {
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
+                justifyContent: "center",
               }}
             >
-              {result.length > 0 && (
+              {result.length > 0 ? (
                 <div>
                   <Chart data={result[0]} />
                 </div>
+              ) : (
+                <Loader type="Puff" color="#00BFFF" height={100} width={100} />
               )}
             </Card.Body>
           </Card>

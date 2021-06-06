@@ -18,7 +18,7 @@ class BootstrapCarousel extends React.Component {
             lg={6}
             style={{ alignSelf: "center", padding: "10px" }}
           >
-            <Carousel keyboard="true">
+            <Carousel>
               <Carousel.Item>
                 <img
                   className="d-block w-100"

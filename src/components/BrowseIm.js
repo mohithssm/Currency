@@ -4,15 +4,18 @@ import { Row, Col } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
 import Container from "react-bootstrap/Container";
 import GaugeChart from "react-gauge-chart";
+import Loader from "react-loader-spinner";
 
 const Chart = (props) => {
   const data = props.data;
   const label = data.label;
   const confidence = parseFloat(data.confidence.toFixed(2));
+
   const chartStyle = {
     height: 150,
     width: 300,
   };
+
   console.log(label, confidence);
   return (
     <div>
@@ -38,7 +41,6 @@ const Chart = (props) => {
 function FileUpload() {
   const [file, setFile] = React.useState("");
   const [result, setResult] = useState([]);
-
   function handleUpload(event) {
     setFile(event.target.files[0]);
   }
@@ -50,6 +52,8 @@ function FileUpload() {
   }
 
   function classifyImg() {
+    if (document.getElementById("inp").value === "") {
+    }
     classifier.classify(document.getElementById("image"), (error, results) => {
       if (error) {
         console.error(error);
@@ -89,8 +93,8 @@ function FileUpload() {
             style={{
               borderRadius: "2%",
               borderWidth: "3px",
-              minHeight: "50vh",
-              maxHeight: "50vh",
+              minHeight: "52vh",
+              maxHeight: "52vh",
             }}
           >
             <Card.Header>Browse Image</Card.Header>
@@ -103,16 +107,21 @@ function FileUpload() {
             >
               <input
                 className="form-control"
-                input="image"
                 type="file"
+                placeholder=".jpg/.png/.jpeg supported"
+                accept="image/png, image/jpeg, image/jpg"
+                id="inp"
                 onChange={handleUpload}
               />
-              <br />
-
+              <label
+                for="inp"
+                style={{ padding: "5px", fontSize: "12px", color: "red" }}
+              >
+                Supported Formats:.jpg|.png |.jpeg
+              </label>
               <div>{file && <ImageThumb image={file} />}</div>
-              <div>
-                <br />
 
+              <div style={{ padding: "15px" }}>
                 <button
                   className="btn btn-sm btn-outline-primary"
                   onClick={() => toggle()}
@@ -132,8 +141,8 @@ function FileUpload() {
             style={{
               borderRadius: "2%",
               borderWidth: "3px",
-              minHeight: "50vh",
-              maxHeight: "50vh",
+              minHeight: "52vh",
+              maxHeight: "52vh",
             }}
           >
             <Card.Header>Predicted Output</Card.Header>
@@ -142,12 +151,20 @@ function FileUpload() {
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
+                justifyContent: "center",
               }}
             >
-              {result.length > 0 && (
+              {result.length > 0 ? (
                 <div>
                   <Chart data={result[0]} />
                 </div>
+              ) : (
+                <Loader
+                  type="ThreeDots"
+                  color="#00BFFF"
+                  height={100}
+                  width={100}
+                />
               )}
             </Card.Body>
           </Card>
