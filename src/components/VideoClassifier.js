@@ -94,6 +94,7 @@ function VideoClassifier() {
             <Card.Body
               style={{
                 display: "flex",
+                flexDirection: "column",
                 alignItems: "center",
                 justifyContent: "center",
               }}
@@ -107,7 +108,9 @@ function VideoClassifier() {
                 style={{
                   display: "flex",
                   justifyContent: "center",
-                  marginTop: "30px",
+                  flexDirection: "column",
+                  marginTop: "25px",
+                  alignItems: "center",
                 }}
               />
 
@@ -124,8 +127,8 @@ function VideoClassifier() {
                   style={{
                     transform: "scale(-1, 1)",
                   }}
-                  width="150"
-                  height="100"
+                  width="200"
+                  height="150"
                 />
                 <br></br>
                 {loaded && (
