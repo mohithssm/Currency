@@ -91,7 +91,13 @@ function VideoClassifier() {
             }}
           >
             <Card.Header>Web Cam</Card.Header>
-            <Card.Body>
+            <Card.Body
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
               <Loader
                 type="Watch"
                 color="#00BFFF"
@@ -115,8 +121,11 @@ function VideoClassifier() {
               >
                 <video
                   ref={videoRef}
-                  style={{ transform: "scale(-1, 1)" }}
+                  style={{
+                    transform: "scale(-1, 1)",
+                  }}
                   width="150"
+                  height="100"
                 />
                 <br></br>
                 {loaded && (
