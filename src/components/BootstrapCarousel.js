@@ -11,8 +11,13 @@ class BootstrapCarousel extends React.Component {
     return (
       <Container fluid>
         <Row style={{ padding: "20px" }}>
-          <Col md={3}></Col>
-          <Col md={6}>
+          <Col
+            xs={12}
+            sm={12}
+            md={12}
+            lg={6}
+            style={{ alignSelf: "center", padding: "10px" }}
+          >
             <Carousel keyboard="true">
               <Carousel.Item>
                 <img
@@ -103,18 +108,21 @@ class BootstrapCarousel extends React.Component {
               </Carousel.Item>
             </Carousel>
           </Col>
-          <Col md={3}></Col>
-        </Row>
-        <Row style={{ padding: "20px" }}>
-          <Col sm={3} md={3} lg={3}></Col>
+
           <Col
-            sm={6}
-            md={6}
+            xs={12}
+            sm={12}
+            md={12}
             lg={6}
-            style={{ display: "flex", justifyContent: "center" }}
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignSelf: "center",
+              padding: "10px",
+            }}
           >
             <Card
-              border="light"
+              border="primary"
               bg="transparent"
               text="light"
               className="text-center"
@@ -122,7 +130,8 @@ class BootstrapCarousel extends React.Component {
                 width: "auto",
                 borderRadius: "2%",
                 borderWidth: "3px",
-                minWidth: "40vh",
+                maxWidth: "40vh",
+                minWidth: "30vh",
               }}
             >
               <Card.Header>CURRENCIES</Card.Header>
@@ -154,14 +163,26 @@ class BootstrapCarousel extends React.Component {
                     </tbody>
                   </Table>
                 </Card.Text>
-                <Link to="/Predictor">
-                  <Button>Click to Start prediction!</Button>
-                </Link>
               </Card.Body>
             </Card>
           </Col>
-
-          <Col sm={3} md={3} lg={3}></Col>
+        </Row>
+        <Row style={{ padding: "20px" }}>
+          <Col
+            xs={12}
+            sm={12}
+            md={12}
+            lg={12}
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              padding: "10px",
+            }}
+          >
+            <Link to="/Predictor">
+              <Button>Click to Start prediction!</Button>
+            </Link>
+          </Col>
         </Row>
       </Container>
     );

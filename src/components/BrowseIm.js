@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import * as ml5 from "ml5";
 import { Row, Col } from "react-bootstrap";
-import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Container from "react-bootstrap/Container";
 import GaugeChart from "react-gauge-chart";
@@ -10,14 +9,23 @@ const Chart = (props) => {
   const data = props.data;
   const label = data.label;
   const confidence = parseFloat(data.confidence.toFixed(2));
+  const chartStyle = {
+    height: 150,
+    width: 300,
+  };
   console.log(label, confidence);
   return (
     <div>
-      <b>Currency</b>
+      <h3>
+        <b>Currency</b>
+      </h3>
       <h5 style={{ color: "#ffd11a" }}>{label}</h5>
-      <b>Accuracy</b>
+      <h3>
+        <b>Accuracy</b>
+      </h3>
 
       <GaugeChart
+        style={chartStyle}
         id="gauge-chart3"
         nrOfLevels={20}
         arcWidth={0.3}
@@ -82,6 +90,7 @@ function FileUpload() {
               borderRadius: "2%",
               borderWidth: "3px",
               minHeight: "50vh",
+              maxHeight: "50vh",
             }}
           >
             <Card.Header>Browse Image</Card.Header>
@@ -104,9 +113,12 @@ function FileUpload() {
               <div>
                 <br />
 
-                <Button onClick={() => toggle()}>
+                <button
+                  className="btn btn-sm btn-outline-primary"
+                  onClick={() => toggle()}
+                >
                   <span className="sr-only">Classify...</span>
-                </Button>
+                </button>
               </div>
             </Card.Body>
           </Card>
@@ -121,10 +133,17 @@ function FileUpload() {
               borderRadius: "2%",
               borderWidth: "3px",
               minHeight: "50vh",
+              maxHeight: "50vh",
             }}
           >
             <Card.Header>Predicted Output</Card.Header>
-            <Card.Body>
+            <Card.Body
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+              }}
+            >
               {result.length > 0 && (
                 <div>
                   <Chart data={result[0]} />

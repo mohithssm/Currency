@@ -13,7 +13,7 @@ class Predictor extends React.Component {
   render() {
     return (
       <Container fluid style={{ height: "auto" }}>
-        <Row style={{ paddingTop: "20px", height: "auto" }}>
+        <Row style={{ paddingTop: "15px", height: "auto" }}>
           <Col md={1} lg={1}></Col>
 
           <Col xs={12} md={10} sm={12} lg={10}>
@@ -37,7 +37,7 @@ class Predictor extends React.Component {
                       sm={12}
                       lg={12}
                       md={12}
-                      style={{ paddingTop: "20px", paddingBottom: "20px" }}
+                      style={{ paddingTop: "15px", paddingBottom: "15px" }}
                     >
                       <Nav variant="pills" className="flex-column">
                         <Nav.Item>
@@ -55,7 +55,7 @@ class Predictor extends React.Component {
                       sm={12}
                       lg={12}
                       md={12}
-                      style={{ paddingTop: "20px", paddingBottom: "20px" }}
+                      style={{ paddingTop: "15px", paddingBottom: "15px" }}
                     >
                       <TabContent>
                         <TabPane eventKey="first">

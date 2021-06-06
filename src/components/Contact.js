@@ -8,7 +8,7 @@ class Contact extends React.Component {
       <Container
         fluid
         style={{
-          paddingTop: "100px",
+          paddingTop: "15px",
           display: "flex",
           justifyContent: "center",
         }}

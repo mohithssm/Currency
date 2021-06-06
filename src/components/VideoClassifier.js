@@ -4,7 +4,7 @@ import Loader from "react-loader-spinner";
 import useInterval from "@use-it/interval";
 import Container from "react-bootstrap/Container";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
-import "./VideoClassifier.css";
+// import "./VideoClassifier.css";
 import { Col, Row, Card } from "react-bootstrap";
 import GaugeChart from "react-gauge-chart";
 
@@ -14,14 +14,23 @@ const Chart = (props) => {
   const data = props.data;
   const label = data.label;
   const confidence = parseFloat(data.confidence.toFixed(2));
+  const chartStyle = {
+    height: 150,
+    width: 300,
+  };
   console.log(label, confidence);
   return (
     <div>
-      <b>Currency</b>
+      <h3>
+        <b>Currency</b>
+      </h3>
       <h5 style={{ color: "#ffd11a" }}>{label}</h5>
-      <b>Accuracy</b>
+      <h3>
+        <b>Accuracy</b>
+      </h3>
 
       <GaugeChart
+        style={chartStyle}
         id="gauge-chart3"
         nrOfLevels={20}
         arcWidth={0.3}
@@ -40,10 +49,13 @@ function VideoClassifier() {
   useEffect(() => {
     classifier = ml5.imageClassifier("../../model/model.json", () => {
       navigator.mediaDevices
-        .getUserMedia({ video: true, audio: false })
+        .getUserMedia({
+          video: { facingMode: { exact: "user" } },
+          audio: false,
+        })
         .then((stream) => {
           videoRef.current.srcObject = stream;
-          videoRef.current.facingMode = "environment";
+          // videoRef.current.facingMode = "environment";
           videoRef.current.play();
           setLoaded(true);
         });
@@ -67,10 +79,6 @@ function VideoClassifier() {
     setResult([]);
   };
 
-  // const rotateWebCam = () => {
-  //   videoRef.current.facingMode = "environment";
-  // };
-
   return (
     <Container>
       <Row>
@@ -84,6 +92,7 @@ function VideoClassifier() {
               borderRadius: "2%",
               borderWidth: "3px",
               minHeight: "50vh",
+              maxHeight: "50vh",
             }}
           >
             <Card.Header>Web Cam</Card.Header>
@@ -100,23 +109,30 @@ function VideoClassifier() {
                   marginTop: "30px",
                 }}
               />
-              <div className="upper">
-                <div className="capture" style={{ minWidth: "300px" }}>
-                  <video
-                    ref={videoRef}
-                    style={{ transform: "scale(-1, 1)" }}
-                    width="200"
-                    height="150"
-                  />
-                  {loaded && (
-                    <button
-                      className="btn btn-lg btn-outline-success"
-                      onClick={() => toggle()}
-                    >
-                      {start ? "Stop" : "Start"}
-                    </button>
-                  )}
-                </div>
+
+              <div
+                className="container"
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  flexDirection: "column",
+                }}
+              >
+                <video
+                  ref={videoRef}
+                  style={{ transform: "scale(-1, 1)" }}
+                  width="200"
+                  height="150"
+                />
+                <br></br>
+                {loaded && (
+                  <button
+                    className="btn btn-sm btn-outline-primary"
+                    onClick={() => toggle()}
+                  >
+                    {start ? "Stop" : "Start"}
+                  </button>
+                )}
               </div>
             </Card.Body>
           </Card>
@@ -132,10 +148,17 @@ function VideoClassifier() {
               borderRadius: "2%",
               borderWidth: "3px",
               minHeight: "50vh",
+              maxHeight: "50vh",
             }}
           >
             <Card.Header>Predicted Output</Card.Header>
-            <Card.Body>
+            <Card.Body
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+              }}
+            >
               {result.length > 0 && (
                 <div>
                   <Chart data={result[0]} />

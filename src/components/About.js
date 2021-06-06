@@ -8,7 +8,7 @@ class About extends React.Component {
       <Container
         fluid
         style={{
-          paddingTop: "100px",
+          paddingTop: "15px",
           display: "flex",
           justifyContent: "center",
         }}
@@ -20,9 +20,10 @@ class About extends React.Component {
           className="text-center"
           style={{
             width: "auto",
+            fontSize: "15px",
             borderRadius: "2%",
             borderWidth: "3px",
-            maxWidth: "75vh",
+            maxWidth: "70vh",
           }}
         >
           <Card.Header>
@@ -38,7 +39,10 @@ class About extends React.Component {
             </Card.Title>
             <Card.Text>
               <blockquote className="blockquote">
-                <p className="text-info" style={{ textAlign: "justify" }}>
+                <p
+                  className="text-info"
+                  style={{ textAlign: "justify", fontSize: "20px" }}
+                >
                   This application is made to recognise the denomination of
                   currency and predict it. It recognises the currency through
                   web cam or by browsing image. This application can predict the
