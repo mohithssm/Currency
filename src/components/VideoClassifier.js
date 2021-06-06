@@ -86,8 +86,8 @@ function VideoClassifier() {
             style={{
               borderRadius: "2%",
               borderWidth: "3px",
-              minHeight: "52vh",
-              maxHeight: "52vh",
+              minHeight: "55vh",
+              maxHeight: "55vh",
             }}
           >
             <Card.Header>Web Cam</Card.Header>
@@ -116,12 +116,12 @@ function VideoClassifier() {
                 <video
                   ref={videoRef}
                   style={{ transform: "scale(-1, 1)" }}
-                  width="220"
+                  width="200"
                 />
                 <br></br>
                 {loaded && (
                   <button
-                    className="btn btn-sm btn-outline-primary"
+                    className="btn btn-md btn-primary"
                     onClick={() => toggle()}
                   >
                     {start ? "Stop" : "Start"}
@@ -141,8 +141,8 @@ function VideoClassifier() {
             style={{
               borderRadius: "2%",
               borderWidth: "3px",
-              minHeight: "52vh",
-              maxHeight: "52vh",
+              minHeight: "55vh",
+              maxHeight: "55vh",
             }}
           >
             <Card.Header>Predicted Output</Card.Header>

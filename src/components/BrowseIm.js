@@ -93,8 +93,8 @@ function FileUpload() {
             style={{
               borderRadius: "2%",
               borderWidth: "3px",
-              minHeight: "52vh",
-              maxHeight: "52vh",
+              minHeight: "55vh",
+              maxHeight: "55vh",
             }}
           >
             <Card.Header>Browse Image</Card.Header>
@@ -123,7 +123,7 @@ function FileUpload() {
 
               <div style={{ padding: "15px" }}>
                 <button
-                  className="btn btn-sm btn-outline-primary"
+                  className="btn btn-md btn-primary"
                   onClick={() => toggle()}
                 >
                   <span className="sr-only">Classify...</span>
@@ -141,8 +141,8 @@ function FileUpload() {
             style={{
               borderRadius: "2%",
               borderWidth: "3px",
-              minHeight: "52vh",
-              maxHeight: "52vh",
+              minHeight: "55vh",
+              maxHeight: "55vh",
             }}
           >
             <Card.Header>Predicted Output</Card.Header>
