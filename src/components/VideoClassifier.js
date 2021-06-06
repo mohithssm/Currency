@@ -116,7 +116,7 @@ function VideoClassifier() {
                 <video
                   ref={videoRef}
                   style={{ transform: "scale(-1, 1)" }}
-                  width="200"
+                  width="150"
                 />
                 <br></br>
                 {loaded && (
