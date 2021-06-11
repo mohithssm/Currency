@@ -60,8 +60,6 @@ function VideoClassifier() {
             facingMode: "environment",
             height: "250",
             width: "200",
-            focusMode: true,
-            tilt: true,
           },
         })
         .then(function (stream) {
@@ -142,6 +140,7 @@ function VideoClassifier() {
               >
                 <video
                   ref={videoRef}
+                  mirrorVideo={true}
                   style={{
                     transform: "scale(-1, 1)",
                   }}
