@@ -65,10 +65,7 @@ function VideoClassifier() {
         .then(function (stream) {
           try {
             videoRef.current.srcObject = stream;
-
             videoRef.current.play();
-            videoRef.current.style.transform = "scale(-1,1)";
-
             setLoaded(true);
           } catch (err) {
             console.log(err);
