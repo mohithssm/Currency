@@ -52,9 +52,8 @@ function VideoClassifier() {
           audio: false,
           video: {
             facingMode: "environment",
-            transform: "scale(-1, 1)",
             height: "250",
-            width: "300",
+            width: "200",
           },
         })
         .then(function (stream) {
@@ -138,8 +137,6 @@ function VideoClassifier() {
                   style={{
                     transform: "scale(-1, 1)",
                   }}
-                  width="200"
-                  height="150"
                 />
                 <br></br>
                 {loaded && (
