@@ -87,7 +87,6 @@ function VideoClassifier() {
               borderRadius: "2%",
               borderWidth: "3px",
               minHeight: "55vh",
-              maxHeight: "55vh",
             }}
           >
             <Card.Header>Web Cam</Card.Header>
@@ -101,7 +100,7 @@ function VideoClassifier() {
             >
               <Loader
                 type="Watch"
-                color="#00BFFF"
+                color="#375a7f"
                 height={100}
                 width={100}
                 visible={!loaded}
@@ -154,7 +153,6 @@ function VideoClassifier() {
               borderRadius: "2%",
               borderWidth: "3px",
               minHeight: "55vh",
-              maxHeight: "55vh",
             }}
           >
             <Card.Header>Predicted Output</Card.Header>
@@ -171,7 +169,7 @@ function VideoClassifier() {
                   <Chart data={result[0]} />
                 </div>
               ) : (
-                <Loader type="Puff" color="#00BFFF" height={100} width={100} />
+                <Loader type="Puff" color="#375a7f" height={100} width={100} />
               )}
             </Card.Body>
           </Card>

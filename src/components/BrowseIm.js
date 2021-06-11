@@ -94,7 +94,6 @@ function FileUpload() {
               borderRadius: "2%",
               borderWidth: "3px",
               minHeight: "55vh",
-              maxHeight: "55vh",
             }}
           >
             <Card.Header>Browse Image</Card.Header>
@@ -142,7 +141,6 @@ function FileUpload() {
               borderRadius: "2%",
               borderWidth: "3px",
               minHeight: "55vh",
-              maxHeight: "55vh",
             }}
           >
             <Card.Header>Predicted Output</Card.Header>
@@ -161,7 +159,7 @@ function FileUpload() {
               ) : (
                 <Loader
                   type="ThreeDots"
-                  color="#00BFFF"
+                  color="#375a7f"
                   height={100}
                   width={100}
                 />
