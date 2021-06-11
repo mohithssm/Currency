@@ -49,7 +49,15 @@ function VideoClassifier() {
     classifier = ml5.imageClassifier("../../model/model.json", () => {
       navigator.mediaDevices
         .getUserMedia({
-          video: { facingMode: { exact: "environment" } },
+          video: {
+            facingMode: { exact: "user" },
+            width: {
+              min: 250,
+            },
+            height: {
+              min: 250,
+            },
+          },
           audio: false,
         })
         .then((stream) => {
