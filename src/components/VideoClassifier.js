@@ -64,6 +64,7 @@ function VideoClassifier() {
         })
         .then(function (stream) {
           try {
+            videoRef.current.style.transform = "scale(-1,1)";
             videoRef.current.srcObject = stream;
             videoRef.current.play();
             setLoaded(true);
@@ -140,7 +141,6 @@ function VideoClassifier() {
               >
                 <video
                   ref={videoRef}
-                  mirrorVideo={true}
                   style={{
                     transform: "scale(-1, 1)",
                   }}
