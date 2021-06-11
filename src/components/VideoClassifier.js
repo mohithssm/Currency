@@ -50,9 +50,13 @@ function VideoClassifier() {
       navigator.mediaDevices
         .getUserMedia({ video: true, audio: false })
         .then((stream) => {
-          videoRef.current.srcObject = stream;
-          videoRef.current.play();
-          setLoaded(true);
+          try {
+            videoRef.current.srcObject = stream;
+            videoRef.current.play();
+            setLoaded(true);
+          } catch (err) {
+            console.log(err);
+          }
         });
     });
   }, []);
