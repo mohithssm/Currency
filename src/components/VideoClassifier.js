@@ -50,7 +50,12 @@ function VideoClassifier() {
       navigator.mediaDevices
         .getUserMedia({
           audio: false,
-          video: { facingMode: "environment" },
+          video: {
+            facingMode: "environment",
+            transform: "scale(-1, 1)",
+            height: "250",
+            width: "300",
+          },
         })
         .then(function (stream) {
           try {
