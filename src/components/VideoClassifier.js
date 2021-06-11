@@ -45,23 +45,22 @@ function VideoClassifier() {
   const [result, setResult] = useState([]);
   const [loaded, setLoaded] = useState(false);
 
-  let shouldFaceUser = true;
-  let defaultsOpts = { audio: false, video: true };
-
   useEffect(() => {
-    defaultsOpts.video = {
-      facingMode: shouldFaceUser ? "user" : "environment",
-    };
     classifier = ml5.imageClassifier("../../model/model.json", () => {
-      navigator.mediaDevices.getUserMedia(defaultsOpts).then(function (stream) {
-        try {
-          videoRef.current.srcObject = stream;
-          videoRef.current.play();
-          setLoaded(true);
-        } catch (err) {
-          console.log(err);
-        }
-      });
+      navigator.mediaDevices
+        .getUserMedia({
+          audio: false,
+          video: { facingMode: shouldFaceUser ? "user" : "environment" },
+        })
+        .then(function (stream) {
+          try {
+            videoRef.current.srcObject = stream;
+            videoRef.current.play();
+            setLoaded(true);
+          } catch (err) {
+            console.log(err);
+          }
+        });
     });
   }, []);
 
