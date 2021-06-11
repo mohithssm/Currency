@@ -45,24 +45,34 @@ function VideoClassifier() {
   const [result, setResult] = useState([]);
   const [loaded, setLoaded] = useState(false);
 
+  let flipBtn = document.querySelector("#flipBtn");
+  let stream = null;
+  let supports = navigator.mediaDevices.getSupportedConstraints();
+  let shouldFaceUser = true;
+  let defaultsOpts = { audio: false, video: true };
+
+  // if (supports["facingMode"] === true) {
+  //   flipBtn.disabled = false;
+  // }
+
+  const flipFun = () => {
+    if (stream == null) return;
+    stream.getTracks().forEach((t) => {
+      t.stop();
+    });
+    shouldFaceUser = !shouldFaceUser;
+  };
+
   useEffect(() => {
+    defaultsOpts.video = {
+      facingMode: shouldFaceUser ? "user" : "environment",
+    };
     classifier = ml5.imageClassifier("../../model/model.json", () => {
       navigator.mediaDevices
-        .getUserMedia({
-          video: {
-            facingMode: { exact: "environment" },
-            width: {
-              min: 300,
-            },
-            height: {
-              min: 300,
-            },
-            focusMode: "true",
-          },
-          audio: false,
-        })
-        .then((stream) => {
+        .getUserMedia(defaultsOpts)
+        .then(function (_stream) {
           try {
+            stream = _stream;
             videoRef.current.srcObject = stream;
             videoRef.current.play();
             setLoaded(true);
@@ -154,6 +164,14 @@ function VideoClassifier() {
                     {start ? "Stop" : "Start"}
                   </button>
                 )}
+
+                <button
+                  className="btn btn-md btn-warning"
+                  id="flipBtn"
+                  onClick={() => flipFun()}
+                >
+                  Flip
+                </button>
               </div>
             </Card.Body>
           </Card>
