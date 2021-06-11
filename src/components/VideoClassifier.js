@@ -50,13 +50,14 @@ function VideoClassifier() {
       navigator.mediaDevices
         .getUserMedia({
           video: {
-            facingMode: { exact: "user" },
+            facingMode: { exact: "environment" },
             width: {
-              min: 250,
+              min: 300,
             },
             height: {
-              min: 250,
+              min: 300,
             },
+            focusMode: "true",
           },
           audio: false,
         })
