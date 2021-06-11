@@ -61,6 +61,7 @@ function VideoClassifier() {
         .then(function (stream) {
           try {
             videoRef.current.srcObject = stream;
+            videoRef.msHorizontalMirror = true;
             videoRef.current.play();
             setLoaded(true);
           } catch (err) {
