@@ -48,7 +48,10 @@ function VideoClassifier() {
   useEffect(() => {
     classifier = ml5.imageClassifier("../../model/model.json", () => {
       navigator.mediaDevices
-        .getUserMedia({ video: { facingMode: "user" }, audio: false })
+        .getUserMedia({
+          video: { facingMode: { exact: "environment" } },
+          audio: false,
+        })
         .then((stream) => {
           try {
             videoRef.current.srcObject = stream;
