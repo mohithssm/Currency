@@ -54,13 +54,12 @@ function VideoClassifier() {
             facingMode: "environment",
             height: "250",
             width: "200",
-            // transform: "scale(-1,1)",
+            transform: "scaleX(-1)",
           },
         })
         .then(function (stream) {
           try {
             videoRef.current.srcObject = stream;
-            videoRef.current.msHorizontalMirror = true;
             videoRef.current.play();
             setLoaded(true);
           } catch (err) {
