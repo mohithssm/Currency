@@ -60,7 +60,7 @@ function VideoClassifier() {
             facingMode: "environment",
             height: "250",
             width: "200",
-            transform: "scaleX(-1)",
+            mirrored: true,
           },
         })
         .then(function (stream) {
