@@ -47,6 +47,12 @@ function VideoClassifier() {
 
   useEffect(() => {
     classifier = ml5.imageClassifier("../../model/model.json", () => {
+      navigator.getUserMedia =
+        navigator.getUserMedia ||
+        navigator.webkitGetUserMedia ||
+        navigator.mozGetUserMedia ||
+        navigator.msGetUserMedia;
+
       navigator.mediaDevices
         .getUserMedia({
           audio: false,
