@@ -58,9 +58,9 @@ function VideoClassifier() {
           audio: false,
           video: {
             facingMode: "environment",
+            resizeMode: "none",
             height: "250",
             width: "200",
-            transform: "scale(-1, 1)",
           },
         })
         .then(function (stream) {
