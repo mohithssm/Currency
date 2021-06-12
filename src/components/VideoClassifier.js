@@ -62,6 +62,7 @@ function VideoClassifier() {
             height: { max: 450 },
             frameRate: { min: 20 },
             aspectRatio: 3 / 2,
+            mirror: false,
           },
         })
         .then(function (stream) {
