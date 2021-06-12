@@ -62,7 +62,6 @@ function VideoClassifier() {
             height: { max: 450 },
             frameRate: { min: 20 },
             aspectRatio: 3 / 2,
-            mirror: false,
           },
         })
         .then(function (stream) {
@@ -143,10 +142,9 @@ function VideoClassifier() {
               >
                 <video
                   ref={videoRef}
-                  style={{
-                    transform: "scale(-1, 1)",
-                    objectFit: "cover",
-                  }}
+                  // style={{
+                  //   transform: "scale(-1, 1)",
+                  // }}
                 />
                 <br></br>
                 {loaded && (
