@@ -58,8 +58,8 @@ function VideoClassifier() {
           audio: false,
           video: {
             facingMode: ["environment", "right"],
-            width: videoRef.current / 2,
-            height: videoRef.current / 2,
+            width: 250,
+            height: 200,
             frameRate: { min: 20 },
             aspectRatio: 3 / 2,
           },
