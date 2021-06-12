@@ -58,10 +58,9 @@ function VideoClassifier() {
           audio: false,
           video: {
             facingMode: "environment",
-            resizeMode: "crop-and-scale",
 
-            height: { min: 250, max: 500 },
-            width: { min: 200, max: 400 },
+            height: { min: 250 },
+            width: { min: 200 },
           },
         })
         .then(function (stream) {
