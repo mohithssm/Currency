@@ -58,8 +58,8 @@ function VideoClassifier() {
           audio: false,
           video: {
             facingMode: "environment",
-            width: { min: 200, max: 600 },
-            height: { min: 300, max: 450 },
+            width: { min: 100, max: 600 },
+            height: { min: 150, max: 450 },
             frameRate: { min: 20 },
             aspectRatio: 3 / 2,
           },
