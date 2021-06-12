@@ -145,6 +145,7 @@ function VideoClassifier() {
                   ref={videoRef}
                   style={{
                     transform: "scale(-1, 1)",
+                    objectFit: "cover",
                   }}
                 />
                 <br></br>
