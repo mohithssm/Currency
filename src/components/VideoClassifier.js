@@ -57,9 +57,9 @@ function VideoClassifier() {
         .getUserMedia({
           audio: false,
           video: {
-            facingMode: ["environment", "right"],
-            width: 250,
-            height: 200,
+            facingMode: "environment",
+            width: { max: 600 },
+            height: { max: 450 },
             frameRate: { min: 20 },
             aspectRatio: 3 / 2,
           },
