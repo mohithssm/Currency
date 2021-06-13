@@ -68,7 +68,7 @@ function VideoClassifier() {
         .then(function (stream) {
           try {
             videoRef.current.srcObject = stream;
-            track = stream.getVideoTracks()[0];
+            const track = stream.getVideoTracks()[0];
             track.applyConstraints({
               advanced: [
                 { focusMode: 'auto' }
