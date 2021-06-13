@@ -62,11 +62,18 @@ function VideoClassifier() {
             height: { min: 80, max: 450 },
             frameRate: { min: 20 },
             aspectRatio: 3 / 2,
+            
           },
         })
         .then(function (stream) {
           try {
             videoRef.current.srcObject = stream;
+            track = stream.getVideoTracks()[0];
+            track.applyConstraints({
+              advanced: [
+                { focusMode: 'auto' }
+              ]
+            })
             videoRef.current.play();
             setLoaded(true);
           } catch (err) {
