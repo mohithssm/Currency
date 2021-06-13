@@ -71,7 +71,9 @@ function VideoClassifier() {
             const track = stream.getVideoTracks()[0];
             track.applyConstraints({
               advanced: [
-                { focusMode: 'auto' }
+                { focusMode: "manual",
+                  focusDistance: 0.8 
+                }
               ]
             })
             videoRef.current.play();
