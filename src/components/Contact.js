@@ -33,13 +33,31 @@ class Contact extends React.Component {
             <Card.Title>mohith</Card.Title>
             <Card.Text>
               <a href="https://www.google.com/intl/en-GB/gmail/about/#">
-                mohithsekharamantri@gmail.com
+                mohithsekharamantri@msitprogram.net
               </a>
             </Card.Text>
             <Card.Title>vamsi krishna</Card.Title>
             <Card.Text>
               <a href="https://www.google.com/intl/en-GB/gmail/about/#">
-                nunnavamsikrishna1998@gmail.com
+                nunnavamsikrishna1998@msitprogram.net
+              </a>
+            </Card.Text>
+            <Card.Title>Jeishnavi Chandra</Card.Title>
+            <Card.Text>
+              <a href="https://www.google.com/intl/en-GB/gmail/about/#">
+                induri.jaishnavi@msitprogram.net
+              </a>
+            </Card.Text>
+            <Card.Title>Lakshmi Sindu</Card.Title>
+            <Card.Text>
+              <a href="https://www.google.com/intl/en-GB/gmail/about/#">
+                lakshmisindu996@msitprogram.net
+              </a>
+            </Card.Text>
+            <Card.Title>Sharath Chandra</Card.Title>
+            <Card.Text>
+              <a href="https://www.google.com/intl/en-GB/gmail/about/#">
+                sharathchandra706@msitprogram.net
               </a>
             </Card.Text>
           </Card.Body>
