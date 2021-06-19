@@ -17,7 +17,7 @@ click here for web application: https://indian-currency-prediction.vercel.app/
 
   Installs all the dependencies required with the help of json file.
   So, navagate throught the directory "Indian Currency Prediction" and run the above dependencies installation
-  command i.r "npm install"
+  command i.e "npm install"
 
   ### `npm start`
 
@@ -31,9 +31,9 @@ click here for web application: https://indian-currency-prediction.vercel.app/
 ## ANDROID APPLICATION
 
   Required Installations in order to build an Android APK file:
-    1.Android Studio : https://developer.android.com/studio
-    2.React Capacitor : https://capacitorjs.com/solution/react
-    3.React web application : files inside the directory "Indian Currency Prediction"
+    * Android Studio : https://developer.android.com/studio
+    * React Capacitor : https://capacitorjs.com/solution/react
+    * React web application : files inside the directory "Indian Currency Prediction"
 
 
   ## Install Capacitor.
