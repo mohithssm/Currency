@@ -80,8 +80,9 @@ click here for web application: https://indian-currency-prediction.vercel.app/
 Finally your APK will be located in the directory of the android folder which was created earlier
 
 # Directory of APK and zip file:
-#### directory:  android/app/release/app-release.apk
-#### ANDROID APK ZIP FILE : 
+#### directory:  
+android/app/release/app-release.apk
+#### Android apk zip file : 
 [app-release.zip](https://github.com/mohithssm/Currency/files/6681080/app-release.zip)
 
 
