@@ -62,19 +62,19 @@ click here for web application: https://indian-currency-prediction.vercel.app/
 
   ## Follow the below steps to build an APK file
 
-  # STEP 1:
+  ### STEP 1:
   ![image](https://user-images.githubusercontent.com/55684348/122649867-a2443c80-d14d-11eb-9090-9726b3404469.png)
 
-  # STEP 2:
+  ### STEP 2:
   ![image](https://user-images.githubusercontent.com/55684348/122649971-0a931e00-d14e-11eb-8363-9b8a40a45bc8.png)
 
-  # STEP 3:
+  ### STEP 3:
   ![image](https://user-images.githubusercontent.com/55684348/122650003-25659280-d14e-11eb-808e-594a003e2073.png)
 
-  # STEP 4:
+  ### STEP 4:
   ![image](https://user-images.githubusercontent.com/55684348/122650037-475f1500-d14e-11eb-902d-b53d03b90db3.png)
 
-  # STEP 5:
+  ### STEP 5:
   ![image](https://user-images.githubusercontent.com/55684348/122650047-534ad700-d14e-11eb-84b4-27d9205ee31f.png)
 
 Finally your APK will be located in the directory of the android folder which was created earlier
