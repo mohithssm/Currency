@@ -31,8 +31,8 @@ click here for web application: https://indian-currency-prediction.vercel.app/
 ## ANDROID APPLICATION
 
  Required Installations in order to build an Android APK file:
- ###### Android Studio : https://developer.android.com/studio
- ###### React Capacitor : https://capacitorjs.com/solution/react
+ * ###### Android Studio : https://developer.android.com/studio
+ * ###### React Capacitor : https://capacitorjs.com/solution/react
  ###### React web application : files inside the directory "Indian Currency Prediction"
           
   ## Install Capacitor.
