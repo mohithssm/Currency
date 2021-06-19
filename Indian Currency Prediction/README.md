@@ -57,6 +57,9 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 ## Open the project in Android Studio with the following command
 ### `npx cap open android`
-![Screenshot (26)](https://user-images.githubusercontent.com/55684348/122649799-52fe0c00-d14d-11eb-9213-d3ec2d2d8ec1.png)
+
+Now navigate to build location and click on build apk as shown below
+
+![image](https://user-images.githubusercontent.com/55684348/122649867-a2443c80-d14d-11eb-9090-9726b3404469.png)
 
 
